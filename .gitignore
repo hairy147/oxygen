@@ -1,0 +1,14 @@
+# ---------------- Core WordPress ----------------
+wp-config.php
+
+# ---------------- User content ------------------
+wp-content/uploads/
+wp-content/cache/
+wp-content/upgrade/
+*.log
+
+# ---------------- OS / Editor noise -------------
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
