@@ -20,13 +20,13 @@
 
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'wordpress' );
+define( 'DB_NAME', 'oxygen' );
 
 /** Database username */
-define( 'DB_USER', 'wpuser' );
+define( 'DB_USER', 'root' );
 
 /** Database password */
-define( 'DB_PASSWORD', 'password' );
+define( 'DB_PASSWORD', '' );
 
 /** Database hostname */
 define( 'DB_HOST', 'localhost' );
@@ -73,6 +73,8 @@ define( 'NONCE_SALT', 'T3AX+yIOn/kRBlLipFMVJ6Q2UVrk2v6COlx3ALvEsr0=' );
  */
 $table_prefix = 'wp_';
 
+define( 'SUNRISE', '1' );                         // Automatically injected by WP Multisite WaaS;
+
 /**
  * For developers: WordPress debugging mode.
  *
@@ -91,8 +93,14 @@ define( 'WP_DEBUG', false );
 
 
 
-define( 'WP_ALLOW_MULTISITE', true );
-/* That's all, stop editing! Happy publishing. */
+define( 'MULTISITE', true );
+define( 'SUBDOMAIN_INSTALL', false );
+define( 'DOMAIN_CURRENT_SITE', 'localhost' );
+define( 'PATH_CURRENT_SITE', '/oxygen/' );
+define( 'SITE_ID_CURRENT_SITE', 1 );
+define( 'BLOG_ID_CURRENT_SITE', 1 );
+
+
 
 /** Absolute path to the WordPress directory. */
 if ( ! defined( 'ABSPATH' ) ) {
