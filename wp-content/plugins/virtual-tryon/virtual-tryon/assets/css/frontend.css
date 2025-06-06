@@ -1,0 +1,102 @@
+/* Virtual Try-On Plugin Styles */
+
+.virtual-tryon-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+.virtual-tryon-form {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.form-group input[type="text"],
+.form-group input[type="file"],
+.form-group select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.form-group .description {
+    font-size: 12px;
+    color: #666;
+    margin-top: 5px;
+}
+
+.loading-indicator {
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+    color: #0073aa;
+}
+
+.result-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.original-image,
+.result-image {
+    flex: 1;
+    min-width: 300px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 4px;
+    background: #fff;
+}
+
+.original-image h4,
+.result-image h4 {
+    margin-top: 0;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.original-image img,
+.result-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+#tryon-message {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+#tryon-message.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+#tryon-message.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+@media (max-width: 768px) {
+    .result-images {
+        flex-direction: column;
+    }
+} 
